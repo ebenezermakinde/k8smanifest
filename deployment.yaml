@@ -20,6 +20,8 @@ spec:
       containers:
       - image: ebenezermakinde/simplestaticapp:latest
         name: simplestaticapp
+        ports:
+        - containerPort: 3500
         resources: {}
 status: {}
 ---
