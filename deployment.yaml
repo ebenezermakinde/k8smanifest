@@ -21,7 +21,7 @@ spec:
       - image: ebenezermakinde/simplestaticapp:5
         name: simplestaticapp
         ports:
-        - containerPort: 3500
+        - containerPort: 80
         resources: {}
 status: {}
 ---
@@ -31,8 +31,8 @@ metadata:
   name: simpleapp-service
 spec:
   ports:
-  - port: 3500
+  - port: 80
     protocol: TCP
-    targetPort: 3500
+    targetPort: 80
   selector:
     app: simplestaticapp
