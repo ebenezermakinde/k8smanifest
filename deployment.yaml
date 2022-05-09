@@ -18,7 +18,7 @@ spec:
         app: simplestaticapp
     spec:
       containers:
-      - image: ebenezermakinde/simplestaticapp:8
+      - image: ebenezermakinde/simplestaticapp:1
         name: simplestaticapp
         ports:
         - containerPort: 80
